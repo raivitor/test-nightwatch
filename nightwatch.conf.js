@@ -36,6 +36,12 @@ module.exports = {
         "browserName": "chrome",
         "javascriptEnabled": true // turn off to test progressive enhancement
       }
+    },
+    "firefox": {
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "javascriptEnabled": true // turn off to test progressive enhancement
+      }
     }
   }
 }
