@@ -4,7 +4,7 @@
   "description": "nightwatch",
   "main": "index.js",
   "scripts": {
-    "e2e": "nightwatch --config nightwatch.conf.BASIC.js",
+    "e2e": "nightwatch --config nightwatch.conf.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
