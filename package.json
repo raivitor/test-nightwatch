@@ -1,0 +1,27 @@
+{
+  "name": "test-nightwatch",
+  "version": "1.0.0",
+  "description": "nightwatch",
+  "main": "index.js",
+  "scripts": {
+    "e2e": "nightwatch --config nightwatch.conf.BASIC.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raivitor/test-nightwatch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raivitor/test-nightwatch/issues"
+  },
+  "homepage": "https://github.com/raivitor/test-nightwatch#readme",
+  "devDependencies": {
+    "nightwatch": "^0.9.19",
+    "chromedriver": "^2.33.2",
+    "nodemon": "^1.11.0",
+    "selenium-server": "^3.9.1"
+  }
+}
