@@ -1,6 +1,7 @@
 //require('env2')('.env'); // optionally store youre Evironment Variables in .env
 const seleniumServer = require("selenium-server");
 const chromedriver = require("chromedriver");
+const firefoxdriver = require('geckodriver');
 const SCREENSHOT_PATH = "./screenshots/";
 
 // we use a nightwatch.conf.js file so we can include comments and helper functions
@@ -15,7 +16,8 @@ module.exports = {
     "host": "127.0.0.1",
     "port": 4444, // standard selenium port
     "cli_args": {
-      "webdriver.chrome.driver" : chromedriver.path
+      "webdriver.chrome.driver" : chromedriver.path,
+      "webdriver.gecko.driver" : firefoxdriver.path
     }
   },
   "test_settings": {
@@ -27,8 +29,9 @@ module.exports = {
       "globals": {
         "waitForConditionTimeout": 5000 // sometimes internet is slow so wait.
       },
-      "desiredCapabilities": { // use Chrome as the default browser for tests
-        "browserName": "chrome"
+      "desiredCapabilities": { // Define the browser
+        "browserName": "chrome", 
+        "marionette": true
       }
     },
     "chrome": {

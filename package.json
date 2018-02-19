@@ -22,6 +22,7 @@
     "nightwatch": "^0.9.19",
     "chromedriver": "^2.33.2",
     "nodemon": "^1.11.0",
+    "geckodriver": "^1.10.0",
     "selenium-server": "^3.9.1"
   }
 }
